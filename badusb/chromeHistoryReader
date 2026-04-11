@@ -10,5 +10,6 @@ ENTER
 DELAY 1500
 STRING copy "$env:LocalAppData\Google\Chrome\User Data\Default\History" "$env:TEMP\h"
 ENTER
+REM Target Keyword statt "deinKeyword" einsetzten
 STRING Select-String -Path "$env:TEMP\h" -Pattern "deinKeyword" | Out-File "$env:USERPROFILE\Desktop\ergebnis.txt"
 ENTER
