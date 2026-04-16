@@ -1,0 +1,10 @@
+app(
+    appid="cookie_clicker",
+    name="Cookie Clicker",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="cookie_clicker_main",
+    requires=["gui"],
+    stack_size=2*1024,
+    fap_icon="icon.png",
+    fap_category="Games"
+)
