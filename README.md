@@ -34,7 +34,7 @@ Angepasste Icons und Animationen für das Flipper-Display.
 
 ## Hardware und Software
 
-* Firmware: Offical
+* Firmware: Momentum
 * SD-Karte: 32GB
 * Primäres Tastaturlayout: de-DE (Deutsch)
 
