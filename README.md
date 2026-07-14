@@ -25,7 +25,7 @@ Angepasste Icons und Animationen für das Flipper-Display.
 ## Installation und Nutzung
 
 1. Klonen Sie das Repository auf Ihren lokalen Computer:
-   git clone https://github.com/DEIN_NUTZERNAME/flipper.git
+   git clone https://github.com/Sebisname/flipper.git
 
 2. Übertragung auf das Gerät:
    Verbinden Sie den Flipper Zero mit Ihrem PC und nutzen Sie die qFlipper App, um die Dateien in die entsprechenden Verzeichnisse auf der SD-Karte zu kopieren.
